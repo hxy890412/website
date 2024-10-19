@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'GenSenRounded2TW-B';
+    src:url(../font/GenSenRounded2TW-B.otf) format("opentype");
+  }
+  @font-face {
+    font-family: 'GenSenRounded2TW-R';
+    src:url(../font/GenSenRounded2TW-R.otf) format("opentype");
+  }
+  @font-face {
+    font-family: 'GenSenRounded2TW-H';
+    src:url(../font/GenSenRounded2TW-H.otf) format("opentype");
+  }
+  @font-face {
+    font-family: 'GenSenRounded2TW-L';
+    src:url(../font/GenSenRounded2TW-L.otf) format("opentype");
+  }
+  @font-face {
+    font-family: 'GenSenRounded2TW-M';
+    src:url(../font/GenSenRounded2TW-M.otf) format("opentype");
+  }
+  
+:root{
+    --darkred:#782700;
+    --red:#A23500;
+    --darkgreen:#2A3F40;
+    --lightgreen:#5C8B8C;
+    --g01: #9AABAB;
+    --g02: #A8BABA;
+    --g03: #D1D6C2;
+    --gray:#F7F8F8;
+}
+
+*{
+    font-family: 'GenSenRounded2TW-L', sans-serif;
+}
+
+.FOR_TOP{
+    width: 100%;
+    height: 120px;
+    padding: 33px 32px;
+    position: fixed;
+    z-index: 998;
+    background: #FFF;
+}
+
+.top_container{
+    display: flex;
+    max-width: 1800px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.top_container img{
+    width: 320px;
+}
+    
+.top_container .menu{
+    display: flex;
+    gap: 57px;
+}
+
+ul.menu a{
+    font-family: 'GenSenRounded2TW-B', sans-serif;
+    color: var(--lightgreen);
+    font-size: 24px;
+}
+
+.FOR_MAIN{
+    width: 100%;
+    padding-top: 120px;
+}
+.FOR_MAIN .BN{
+    width: 100%;
+    position: relative;
+    background: var(--g03);
+}
+.FOR_MAIN .BN img{
+    width: 100%;
+}
+.BN .button{
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    right: calc((100vw - 65vw) / 2);
+    gap: 45px;
+}
+.BN .button a{
+    display: block;
+    padding: 0 3vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 62px;
+    color: var(--red);
+    border: 1px solid var(--red);
+    transition: all 0.3s ease-in;
+}
+.BN .button a:hover{
+    background: var(--red);
+    color: var(--gray);
+}
+.s1 p{
+    font-family: 'GenSenRounded2TW-R', sans-serif;
+    font-size: 28px; 
+    line-height: 57px;
+    color: #000;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.s1{
+    background: var(--g03);
+    width: 100%;
+    padding: 50px;
+}
+
+.s2{
+    background: var(--g01);
+    padding: 148px;
+    width: 100%;
+    text-align: center;
+}
+h1.section_title{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 58px;
+    font-weight: bolder;
+    line-height: 62px;
+    letter-spacing: 0.05rem;
+    color: var(--darkgreen);
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 1;
+}
+.s2 h1.section_title{
+    margin-bottom: 162px;
+}
+.section_title img:first-child{
+    width: 170px;
+    position: absolute;
+    left: -94px;
+    top: 0;
+}
+.section_title img:last-child{
+    width: 170px;
+    position: absolute;
+    right:-77px;
+    bottom: -10px;
+}
+
+.card_section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.card_list{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.card_list:not(:last-child){
+    margin-bottom: 147px;
+}
+.card_section .card_item{
+    width: 100%;
+    position: relative;
+    background: #FFF;
+}
+
+.card_item > img{
+    object-fit: cover;
+    width: 100%;
+    height: 318px;
+}
+.text_section{
+    padding: 48px 20px ;
+    background: #FFF;
+}
+.text_section p{
+    font-family: 'GenSenRounded2TW-R', sans-serif;
+    font-size: 28px;
+    line-height: 46px;
+    height: 138px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card_title{
+    position: absolute;
+    top: 285px;
+    left: -14px;
+    display: flex;
+}
+.card_title .CT{
+    background: #782700;
+    color: #FFF;
+    position: relative;
+    display: flex;
+    padding: 12px 20px;
+    font-family: 'GenSenRounded2TW-R', sans-serif;;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.05rem;
+}
+
+.card_title  img.card_right{
+    width: 35px;
+}
+.card_title .CT img.card_sticker{
+    position: absolute;
+    left: 0;
+    bottom: -11px ;
+    width: 14px;
+}
+
+
+@media screen and (min-width:1720px) {
+    .top_container img{
+        width: 490px;
+    }
+    ul.menu a{
+        font-size: 35px;
+    }
+    .BN .button{
+        bottom: 158px;
+    }
+    .BN .button a{
+        font-size: 35px;
+        line-height: 62px;
+        padding: 0 48px;
+    }
+   
+    .s1 p{
+        font-size: 28px;
+        line-height: 57px;
+        max-width: 1277px;
+    }
+
+    .card_section{
+        max-width: 1277px;
+    }
+    .card_item .cardimg{
+
+    }
+}
