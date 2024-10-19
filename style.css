@@ -347,12 +347,15 @@ ul.see_more{
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 1000px;
     text-align: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
 }
 
 .modal-content img {

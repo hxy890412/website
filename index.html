@@ -165,13 +165,19 @@
                     <div class="market_item">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)" class="market_img" data-img="img/BN.png" data-text="Ｍixigan美墨創意蔬食料理">
+                                <a href="javascript:void(0)" class="market_img"
+                                    data-img="img/BN.png"
+                                    data-text="Ｍixigan美墨創意蔬食料理"
+                                    data-description="這是美墨蔬食料理的詳細介紹，提供美味健康的餐點。" 
+                                    data-address="台北市內湖區民權東路六段">
                                     <img src="img/BN.png" alt="01">
                                 </a>
                                 <p>Ｍixigan美墨創意蔬食料理</p>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="market_img" data-img="img/BN2.png" data-text="Ve'ge'Bon 時尚素">
+                                <a href="javascript:void(0)" class="market_img" data-img="img/BN.png" data-text="Ve'ge'Bon 時尚素" data-text="Ｍixigan美墨創意蔬食料理"
+                                data-description="這是美墨蔬食料理的詳細介紹，提供美味健康的餐點。" 
+                                data-address="台北市內湖區民權東路六段"> >
                                     <img src="img/BN.png" alt="01">
                                 </a>
                                 <p>Ve'ge'Bon
@@ -397,6 +403,8 @@
             <span class="close">&times;</span>
             <img id="modalImage" src="" alt="market image">
             <p id="modalText"></p>
+            <p id="modalDescription"></p>
+            <p id="modalAddress"></p>
         </div>
     </div>
 
@@ -451,12 +459,18 @@
                 $('.market_img').click(function () {
                 // 取得點擊的圖片和文案內容
                 var imgSrc = $(this).data('img');
-                var textContent = $(this).data('text');
+                var title = $(this).data('Text');
+                var description = $(this).data('description');
+                var address = $(this).data('address');
+                var contact = $(this).data('contact');
+        
                 
                 // 將內容更新到模態視窗
                 $('#modalImage').attr('src', imgSrc);
-                $('#modalText').text(textContent);
-
+                $('#modalText').text(title);
+                $('#modalDescription').text(description);
+                $('#modalAddress').text("地址: " + address);
+                $('#modalContact').text(contact);
                 // 顯示模態視窗
                 $('#modal').fadeIn();
             });
