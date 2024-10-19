@@ -165,13 +165,13 @@
                     <div class="market_item">
                         <ul>
                             <li>
-                                <a href="javascript:void(0)" class="market_img">
+                                <a href="javascript:void(0)" class="market_img" data-img="img/BN.png" data-text="Ｍixigan美墨創意蔬食料理">
                                     <img src="img/BN.png" alt="01">
                                 </a>
                                 <p>Ｍixigan美墨創意蔬食料理</p>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="market_img">
+                                <a href="javascript:void(0)" class="market_img" data-img="img/BN2.png" data-text="Ve'ge'Bon 時尚素">
                                     <img src="img/BN.png" alt="01">
                                 </a>
                                 <p>Ve'ge'Bon
@@ -391,6 +391,15 @@
 
 
     </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="market image">
+            <p id="modalText"></p>
+        </div>
+    </div>
+
     <!-- 版尾 -->
     <div class="FOR_FOOTER">
 
@@ -437,6 +446,29 @@
                 } else {
                     localStorage.setItem("seeMoreVisible", "false");
                 }
+            });
+
+                $('.market_img').click(function () {
+                // 取得點擊的圖片和文案內容
+                var imgSrc = $(this).data('img');
+                var textContent = $(this).data('text');
+                
+                // 將內容更新到模態視窗
+                $('#modalImage').attr('src', imgSrc);
+                $('#modalText').text(textContent);
+
+                // 顯示模態視窗
+                $('#modal').fadeIn();
+            });
+
+            // 點擊關閉按鈕或模態外部時關閉模態視窗
+            $('.close, #modal').click(function () {
+                $('#modal').fadeOut();
+            });
+
+            // 阻止點擊內容區域時關閉模態
+            $('.modal-content').click(function (event) {
+                event.stopPropagation();
             });
         });
         
