@@ -292,21 +292,46 @@ ul.menu a{
     text-align: center;
 }
 
-.market_shop .see_more{
+ul.see_more{
     display: none;
 }
 .s3 > a{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 24px;
-    color: var(--darkgreen);
+    
     display: block;
     width: 300px;
     height: 90px;
-    line-height: 90px;
+    
     margin: 0 auto;
     text-align: center;
     border: 1px solid var(--darkgreen);
+}
+.s3 > a > p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    color: var(--darkgreen);
+    line-height: 90px;
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    padding-right: 43px;
+}
+.s3 > a > p:after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 8px;
+    width: 24px;
+    height: 90px;
+    background: url(img/arrow.svg)no-repeat center center;
+    background-size: 24px;
+}
 
+.show{
+    display: flex!important;
+}
+.hide{
+    display: none;
 }
 
 @media screen and (max-width:1440px) {
