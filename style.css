@@ -51,14 +51,24 @@
     margin: 0 auto;
     height: 100%;
 }
+.top_container > div{
+    height: 100%;
+}
+.top_container > div > a{
+    display: inline-block;
+    height: 100%;
+}
 
 .top_container img{
     width: 250px;
+    height: 100%;
 }
     
 .top_container .menu{
     display: flex;
     gap: 57px;
+    height: 100%;
+    align-items: center;
 }
 
 ul.menu a{
@@ -66,6 +76,28 @@ ul.menu a{
     color: var(--lightgreen);
     font-size: 18px;
 }
+/* 側邊選單 */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu_icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu_icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--lightgreen);
+    margin: 6px 0;
+}
+.open_menu{
+    display: none;
+}
+
 
 .FOR_MAIN{
     width: 100%;
@@ -103,7 +135,7 @@ ul.menu a{
 }
 .s1 p{
     font-family: 'GenSenRounded2TW-R', sans-serif;
-    font-size: 16px; 
+    font-size: 18px; 
     line-height: 32px;
     color: #000;
     margin: 0 auto;
@@ -112,7 +144,7 @@ ul.menu a{
 .s1{
     background: var(--g03);
     width: 100%;
-    padding: 50px;
+    padding: 50px 60px;
 }
 
 .s2{
@@ -404,6 +436,58 @@ ul.see_more{
     cursor: pointer;
 }
 
+.s4{
+    padding: 110px 60px;
+    background: var(--g01);
+}
+.s4 .section_title{
+    margin-bottom: 140px;
+}
+.action_map{
+    max-width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+.action_map > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.FOR_FOOTER{
+    width: 100%;
+    padding: 92px 60px;
+    background: var(--darkgreen);
+}
+.FOR_FOOTER .Logo_box{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.FOR_FOOTER ul > li{
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+.FOR_FOOTER ul > li > ul{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.FOR_FOOTER ul li p{
+    font-family: 'GenSenRounded2TW-R', sans-serif;
+    font-size: 28px;
+    line-height: 46px;
+    color: var(--gray);
+    min-width: fit-content;
+}
+.FOR_FOOTER ul li img{
+    height: 38px;
+}
+
 
 
 @media screen and (max-width:960px) {
@@ -421,6 +505,56 @@ ul.see_more{
     }
     .card_item > img{
         height: 26vw;
+    }
+    /* 顯示側邊選單 */
+    .top_container .menu{
+        display: none;
+    }
+    .top_container .open_menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color:#FFF;
+        padding-top: 100px;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+    .open_menu.show {
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top_container .open_menu li{
+        padding: 30px 0;
+        border-bottom: 1px solid var(--g01);
+        width: 80%;
+        text-align: center;
+    }
+    .top_container .open_menu li:last-child{
+        border-bottom: none;
+    }
+    .top_container .open_menu li a{
+        font-family:  'GenSenRounded2TW-B', sans-serif;
+        font-size: 18px;
+        display: inline-block;
+        width: 100%;
+        color: var(--lightgreen);
+
+    }
+
+    .top_container .menu_icon {
+        display: block;
+        height: fit-content;
+    }
+
+    .top_container {
+        justify-content: space-between;
+        align-items: center;
     }
 
 }
@@ -458,11 +592,20 @@ ul.see_more{
 }
 
 @media screen and (max-width:400px) {
+    .FOR_TOP{
+        padding: 0 32px;
+    }
+    .top_container img{
+        width: 200px;
+    }
     .s2{
         padding: 80px 32px;
     }
     .text_section{
         padding: 20px 20px 16px;
+    }
+    .s1{
+        padding: 40px 32px;
     }
 }
 

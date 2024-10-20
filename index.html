@@ -13,9 +13,22 @@
     <!-- 版頭 -->
     <div class="FOR_TOP">
         <div class="top_container">
-            <div class="logo"><img src="img/LOGO.svg" alt="" class="LOGO"></div>
+            <div class="logo"><a href="index.html"><img src="img/LOGO.svg" alt="" class="LOGO"></a></div>
             
             <ul class="menu">
+                <li><a href="#s1">特色活動</a></li>
+                <li><a href="#s2">市集攤位</a></li>
+                <li><a href="#s3">活動地圖</a></li>
+            </ul>
+
+            <div class="menu_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- 側邊選單 -->
+            <ul class="open_menu">
                 <li><a href="#s1">特色活動</a></li>
                 <li><a href="#s2">市集攤位</a></li>
                 <li><a href="#s3">活動地圖</a></li>
@@ -394,7 +407,14 @@
                 <p>看更多</p>
             </a>
         </div>
-
+        <div class="s4" id="s3">
+            <div class="section_title">
+                <h1>活動地圖</h1>
+            </div>
+            <div class="action_map">
+                <img src="img/BN02.jpg" alt="test">
+            </div>
+        </div>
 
     </div>
 
@@ -410,7 +430,24 @@
 
     <!-- 版尾 -->
     <div class="FOR_FOOTER">
-
+        <ul class="Logo_box">
+            <li>
+                <p>｜主辦單位｜</p>
+                <img src="img/logo01.png" alt="慈濟傳播">
+            </li>
+            <li>
+                <p>｜感恩聯盟｜</p>
+                <ul>
+                    <img src="img/logo02.png" alt="慈濟傳播">
+                    <img src="img/logo03.png" alt="慈濟傳播">
+                    <img src="img/logo04.png" alt="慈濟傳播">
+                    <img src="img/logo05.png" alt="慈濟傳播">
+                    <img src="img/logo06.png" alt="慈濟傳播">
+                    <img src="img/logo07.png" alt="慈濟傳播">
+                    <img src="img/logo08.png" alt="慈濟傳播">
+                </ul>
+            </li>
+        </ul>
     </div>
 
 
@@ -420,29 +457,43 @@
             $('.menu').on('click', 'a', function (e) {
                 e.preventDefault();
                 const anchor = $(this).attr('href');
-                const linkScroll = $(anchor).offset().top - 80; // 考慮到頂部導航的高度，調整滾動位置
+                const linkScroll = $(anchor).offset().top - 80;
                 $('html,body').stop().animate({ 
                     scrollTop: linkScroll
                 }, 700);
             });
+
+            $(document).ready(function () {
+            // 點擊 menu_icon 時，切換側邊選單的顯示與隱藏
+                $('.menu_icon').click(function () {
+                    $('.open_menu').toggleClass('show');
+                });
+                $('.open_menu li a').click(function () {
+                $('.open_menu').removeClass('show');  // 隱藏側邊選單
+            });
+            });
             
             
-            // 檢查 Local Storage 以確定是否顯示 .see_more 區塊
-            if (localStorage.getItem("seeMoreVisible") === "true") {
+             // 初始檢查 Local Storage 狀態，決定是否顯示 "看更多" 的內容
+            if (localStorage.getItem("seeMoreVisible") === "false") {
                 $(".market_shop ul.see_more").addClass("show");
+                $(".see_more_btn").hide(); // 隱藏 "看更多" 按鈕
             } else {
                 $(".market_shop ul.see_more").removeClass("show");
+                $(".see_more_btn").show(); // 確保按鈕可見
             }
 
-            // 點擊按鈕顯示或隱藏 .see_more 區塊
+            // 點擊 "看更多" 按鈕後切換顯示與隱藏狀態
             $('.see_more_btn').click(function () {
                 $(".market_shop ul.see_more").toggleClass("show");
 
-                // 將顯示/隱藏狀態儲存到 Local Storage
+                // 根據顯示狀態更新 Local Storage 和按鈕狀態
                 if ($(".market_shop ul.see_more").hasClass("show")) {
                     localStorage.setItem("seeMoreVisible", "true");
+                    $(".see_more_btn").hide(); // 隱藏 "看更多" 按鈕
                 } else {
                     localStorage.setItem("seeMoreVisible", "false");
+                    $(".see_more_btn").show(); // 顯示按鈕 (這裡只是保險，如果需要顯示較少功能)
                 }
             });
 
