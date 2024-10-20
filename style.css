@@ -556,6 +556,25 @@ ul.see_more{
         justify-content: space-between;
         align-items: center;
     }
+    .FOR_FOOTER{
+        padding:  92px 32px;
+    }
+    .FOR_FOOTER ul li p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .FOR_FOOTER ul li img{
+        height: 18px;
+    }
+    .FOR_FOOTER ul > li:first-child{
+        align-items: center;
+    }
+    .s4{
+        padding: 80px 60px;
+    }
+    .s4 .section_title{
+        margin-bottom: 80px;
+    }
 
 }
 
@@ -589,6 +608,26 @@ ul.see_more{
     .text_section{
         padding: 36px 20px 16px;
     }
+    .action_map{
+        max-height: 450px;
+    }
+    .market_shop ul{
+        justify-content: space-between;
+    }
+    .market_shop ul li{
+        width: 120px;
+        max-width: 120px;
+        gap: 12px;
+    }
+    .market_shop ul li a{
+        width: 80px;
+        height: 80px;
+    }
+    .market_shop ul li p{
+        font-size: 16px;
+    }
+
+    
 }
 
 @media screen and (max-width:500px) {
@@ -608,6 +647,18 @@ ul.see_more{
     .card_item > img{
         height: calc((100vw - 120px) / 1.9);
     }
+    .market_shop ul li{
+        width: 100px;
+        max-width: 100px;
+        gap: 12px;
+    }
+    .market_shop ul li a{
+        width: 70px;
+        height: 70px;
+    }
+    .market_shop ul li p{
+        font-size: 14px;
+    }
 }
 
 
@@ -626,6 +677,12 @@ ul.see_more{
     }
     .s1{
         padding: 40px 32px;
+    }
+    .s3{
+        padding: 80px 32px 70px;
+    }
+    .s4{
+        padding: 80px 32px;
     }
 }
 
