@@ -241,6 +241,29 @@ ul.menu a{
     padding: 170px 60px 140px;
     position: relative;
 }
+.s3::before{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(img/area_one_bg.svg)no-repeat top center;
+    background-size: 100%;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 110px;
+}
+.s3::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(img/area_two_bg.svg)no-repeat bottom center;
+    background-size: 100%;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 110px;
+}
+
 .s3 .section_title{
     margin-bottom: 126px;
 }
@@ -380,6 +403,8 @@ ul.see_more{
     font-weight: bold;
     cursor: pointer;
 }
+
+
 
 @media screen and (max-width:960px) {
     .BN > img{
