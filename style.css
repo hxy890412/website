@@ -164,6 +164,7 @@ ul.menu a{
     position: relative;
     width: fit-content;
     margin: 0 auto;
+    z-index: 2;
 }
 .section_title h1{
     font-family: 'Noto Sans TC', sans-serif;
@@ -211,6 +212,8 @@ ul.menu a{
 .card_section{
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 .card_list{
     width: 100%;
@@ -312,7 +315,8 @@ ul.menu a{
 .market_shop{
     max-width: 1000px;
     margin: 0 auto 110px;
-
+    position: relative;
+    z-index: 2;
 }
 .market_shop ul{
     display: flex;
@@ -362,20 +366,18 @@ ul.see_more{
     display: none;
 }
 .s3 > a{
-    
     display: block;
-    width: 300px;
-    height: 90px;
-    
+    padding: 0 3vw;
     margin: 0 auto;
     text-align: center;
     border: 1px solid var(--darkgreen);
+    width: fit-content;
 }
 .s3 > a > p{
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 24px;
     color: var(--darkgreen);
-    line-height: 90px;
+    line-height: 62px;
     position: relative;
     margin: 0 auto;
     width: fit-content;
@@ -388,7 +390,7 @@ ul.see_more{
     top: 0;
     right: 8px;
     width: 24px;
-    height: 90px;
+    height: 68px;
     background: url(img/arrow.svg)no-repeat center center;
     background-size: 24px;
 }
@@ -429,7 +431,7 @@ ul.see_more{
 
 .modal_outer{
     display: flex;
-    gap: 12px;
+    gap: 16px;
     height: 100%;
 }
 .modal_imgbox{
@@ -584,6 +586,67 @@ ul.see_more{
     text-align: center;
     color: var(--gray);
 
+}
+
+/* 特色活動圖片定位 */
+.s2{position: relative;}
+.flowers{position: absolute;transition: all 0.2s ease-in-out;}
+.s2 .s01{
+    width: 20vw;
+    height: auto;
+    right: 0;
+    top:148px
+}
+.s2 .s02{
+    width: 9vw;
+    height: auto;
+    left: 10vw;
+    top:12vw;
+}
+
+.s2 .s03{
+    width: 20vw;
+    height: auto;
+    left: -70px;
+    top:30%;
+}
+.s2 .s04{
+    width: 68px;
+    height: auto;
+    right: 5.2vw;
+    top:35%;
+}
+.s2 .s05{
+    width: 13vw;
+    height: auto;
+    right: -30px;
+    top:48%;
+}
+.s2 .s06{
+    width: 19vw;
+    height: auto;
+    left: -100px;
+    bottom: 18%;
+}
+/* 市集攤位圖片定位 */
+.s3{position: relative;}
+.s201{
+    width: 3.5vw;
+    height: auto;
+    left: 9.3vw;
+    top: 11%;
+}
+.s202{
+    width: 10.5vw;
+    height: auto;
+    right: 0;
+    top: 15%;
+}
+.s203{
+    width: 24vw;
+    height: auto;
+    left: -90px;
+    top: 39vw;
 }
 
 @media screen and (max-width:1023px) {
