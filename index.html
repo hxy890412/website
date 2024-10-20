@@ -179,14 +179,14 @@
                         <ul>
                             <li>
                                 <a href="javascript:void(0)" class="market_img"
-                                    data-img="img/BN.png"
+                                    data-img="img/photo01.png"
                                     data-text="Ｍixigan美墨創意蔬食料理"
                                     data-description="這是美墨蔬食料理的詳細介紹，提供美味健康的餐點。" 
                                     data-address="在Mixigan，我們相信食物不僅是生存的必要，更是文化交流的橋樑！您可品嚐到美墨的熱情與獨特風味的創新融合，多樣化的植物性料理，讓每一口都充滿驚喜與活力。
                                     想嚐嚐「墨西哥塔可」的香脆？還是來一個多汁的「美式植物肉漢堡」？還有我們的以糙米為基底的碗料理，搭配新鮮的蔬菜、香料，每一道餐點與飲品都有豐富的味蕾感受，並展現出活潑的氛圍。
                                     Mixigan也積極使用環保包材，推廣減少廢棄物的理念，努力為餐飲產業帶來新的視角。也希望讓人們更輕鬆地選擇植物性飲食，在享受美味的同時，共同邁向更永續的未來！
                                     快來Mixigan感受美味的魔力，與我們一起在這個市集中，享受美食的故事，並為地球的明天盡一份心力吧！讓我們一起為可持續的未來舉杯！">
-                                    <img src="img/BN.png" alt="01">
+                                    <img src="img/photo01.png" alt="01">
                                 </a>
                                 <p>Ｍixigan美墨創意蔬食料理</p>
                             </li>
@@ -463,6 +463,9 @@
             </li>
         </ul>
     </div>
+    <div class="copyright">
+        <p>Copyright © Tzu Chi Culture and Communication Foundation. All rights reserved.<br>版權註記：以上任何文字影音著作皆屬慈濟版權所有，感恩您尊重智慧財產權，請勿擅自重製、轉貼、節錄及不得以任何方法曲解畫面原意，未經同意不得以任何形式利用之。</p>
+    </div>
 
 
     <script>
@@ -500,7 +503,7 @@
             // 點擊 "看更多" 按鈕後切換顯示與隱藏狀態
             $('.see_more_btn').click(function () {
                 $(".market_shop ul.see_more").toggleClass("show");
-
+                $(".see_more_btn").hide(); // 隱藏 "看更多" 按鈕
                 // 根據顯示狀態更新 Local Storage 和按鈕狀態
                 if ($(".market_shop ul.see_more").hasClass("show")) {
                     localStorage.setItem("seeMoreVisible", "true");
@@ -528,11 +531,13 @@
                 $('#modalContact').text(contact);
                 // 顯示模態視窗
                 $('#modal').fadeIn();
+                $('body').addClass('body-no-scroll');
             });
 
             // 點擊關閉按鈕或模態外部時關閉模態視窗
             $('.close, #modal').click(function () {
                 $('#modal').fadeOut();
+                $('body').removeClass('body-no-scroll');
             });
 
             // 阻止點擊內容區域時關閉模態

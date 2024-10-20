@@ -1,22 +1,29 @@
 @font-face {
     font-family: 'GenSenRounded2TW-B';
-    src:url(../font/GenSenRounded2TW-B.otf) format("opentype"),url(../font/GenSenRounded2TW-B.woff) format("woff");
+    src:url(../font/GenSenRounded2TW-B.woff) format("woff"),
+        url(../font/GenSenRounded2TW-B.otf) format("opentype");
   }
   @font-face {
     font-family: 'GenSenRounded2TW-R';
-    src:url(../font/GenSenRounded2TW-R.otf) format("opentype"),url(../font/GenSenRounded2TW-R.woff) format("woff");
+    src:url(../font/GenSenRounded2TW-R.woff) format("woff"),
+        url(../font/GenSenRounded2TW-R.otf) format("opentype");
   }
   @font-face {
     font-family: 'GenSenRounded2TW-H';
-    src:url(../font/GenSenRounded2TW-H.otf) format("opentype"),url(../font/GenSenRounded2TW-H.woff) format("woff");
+    src:url(../font/GenSenRounded2TW-H.woff) format("woff"),
+        url(../font/GenSenRounded2TW-H.otf) format("opentype");
   }
   @font-face {
     font-family: 'GenSenRounded2TW-L';
-    src:url(../font/GenSenRounded2TW-L.otf) format("opentype"),url(../font/GenSenRounded2TW-L.woff) format("woff");
+    src:url(../font/GenSenRounded2TW-L.woff) format("woff"),
+        url(../font/GenSenRounded2TW-L.otf) format("opentype");
+
   }
   @font-face {
     font-family: 'GenSenRounded2TW-M';
-    src:url(../font/GenSenRounded2TW-M.otf) format("opentype"),url(../font/GenSenRounded2TW-M.woff) format("woff");
+    src: url(../font/GenSenRounded2TW-M.woff) format("woff"),
+        url(../font/GenSenRounded2TW-M.otf) format("opentype");
+       
   }
   
 :root{
@@ -173,22 +180,22 @@ ul.menu a{
 }
 .section_title::before{
     content: '';
-    width: 170px;
-    height: 153px;
+    width: 120px;
+    height: 106px;
     display: block;
     position: absolute;
-    left: -94px;
+    left: -64px;
     top: 0;
     background: url(img/title_left.svg) no-repeat center top;
     background-size: 100%;
 }
 .section_title::after{
     content: '';
-    width: 170px;
-    height: 153px;
+    width: 120px;
+    height: 106px;
     display: block;
     position: absolute;
-    right:-77px;
+    right:-45px;
     bottom: -10px;
     background: url(img/title_right.svg) no-repeat center top;
     background-size: 100%;
@@ -329,8 +336,8 @@ ul.menu a{
 
 .market_shop ul li a{
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 165px;
+    height: 165px;
     border-radius: 1000px;
     background: #FFF;
     overflow: hidden;
@@ -482,9 +489,8 @@ ul.see_more{
     border: 3px solid #e6e6e6;
 }
 
-/* 當滑鼠懸停在滑塊上時的顏色變化 */
 .modal_textcontent::-webkit-scrollbar-thumb:hover {
-    background: #555; /* 滑鼠懸停時的滑塊顏色 */
+    background: #555;
 }
 .modal-content .modal_content{
     font-family: 'GenSenRounded2TW-R', sans-serif;
@@ -492,6 +498,10 @@ ul.see_more{
     color: #251E1C;
     line-height: 36px;
     
+}
+.body-no-scroll {
+    overflow: hidden;
+    height: 100%; 
 }
 
 .close {
@@ -562,6 +572,20 @@ ul.see_more{
     height: 38px;
 }
 
+.copyright{
+    width: 100%;
+    padding: 12px 32px;
+    background: #1e2d2e;
+}
+.copyright p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--gray);
+
+}
+
 @media screen and (max-width:1023px) {
     
     .modal_imgbox{
@@ -599,6 +623,7 @@ ul.see_more{
     }
     .modal-content{
         padding: 20px;
+        height: 60%;
     }
 }
 
@@ -669,7 +694,7 @@ ul.see_more{
         align-items: center;
     }
     .FOR_FOOTER{
-        padding:  92px 32px;
+        padding:  60px 32px;
     }
     .FOR_FOOTER ul li p{
         font-size: 16px;
@@ -686,6 +711,9 @@ ul.see_more{
     }
     .s4 .section_title{
         margin-bottom: 80px;
+    }
+    .copyright p{
+        font-size: 9px;
     }
    
 
@@ -734,8 +762,8 @@ ul.see_more{
         gap: 12px;
     }
     .market_shop ul li a{
-        width: 80px;
-        height: 80px;
+        width: 95px;
+        height: 95px;
     }
     .market_shop ul li p{
         font-size: 16px;
@@ -797,8 +825,8 @@ ul.see_more{
         gap: 16px 0;
     }
     .market_shop ul li a{
-        width:60px;
-        height: 60px;
+        width:75px;
+        height: 75px;
     }
     .market_shop{
         margin-bottom: 30px;
