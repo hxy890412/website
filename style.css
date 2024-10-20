@@ -129,7 +129,7 @@ ul.menu a{
 .section_title h1{
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 32px;
-    font-weight: bolder;
+    font-weight: 1000;
     line-height: 62px;
     letter-spacing: 0.05rem;
     color: var(--darkgreen);
@@ -219,8 +219,8 @@ ul.menu a{
     position: relative;
     display: flex;
     padding: 12px 20px;
-    font-family: 'GenSenRounded2TW-R', sans-serif;;
-    font-size: 18px;
+    font-family: 'GenSenRounded2TW-b', sans-serif;;
+    font-size: 20px;
     line-height: 42px;
     letter-spacing: 0.05rem;
 }
@@ -401,6 +401,9 @@ ul.see_more{
 }
 
 @media screen and (max-width:768px){
+    .s2 .section_title{
+        margin-bottom: 60px;
+    }
     .card_section{
         display: flex;
         flex-direction: column;
@@ -429,4 +432,12 @@ ul.see_more{
     }
 }
 
+@media screen and (max-width:400px) {
+    .s2{
+        padding: 80px 32px;
+    }
+    .text_section{
+        padding: 20px 20px 16px;
+    }
+}
 
