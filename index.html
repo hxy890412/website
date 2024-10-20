@@ -44,7 +44,7 @@
             <div class="card_section">
                 <ul class="card_list">
                     <li class="card_item">
-                        <img src="img/BN.png" alt="01">
+                        <img src="img/imgtest.png" alt="01">
                         <div class="text_section">
                             <p>簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容簡介內容</p>
                         </div>
@@ -417,12 +417,6 @@
     <script>
         $(document).ready(function () {
 
-            // $('.toTop').click(function(){
-            //     $('html,body').animate({
-            //         scrollTop: 0
-            //     }, 100);       
-            // });
-
             $('.menu').on('click', 'a', function (e) {
                 e.preventDefault();
                 const anchor = $(this).attr('href');
@@ -432,11 +426,7 @@
                 }, 700);
             });
             
-            // $('.see_more_btn').click(function(){
-            //     $(".market_shop ul.see_more" ).addClass("show");
-            // });
-
-
+            
             // 檢查 Local Storage 以確定是否顯示 .see_more 區塊
             if (localStorage.getItem("seeMoreVisible") === "true") {
                 $(".market_shop ul.see_more").addClass("show");
@@ -456,10 +446,10 @@
                 }
             });
 
-                $('.market_img').click(function () {
+            $('.market_img').click(function () {
                 // 取得點擊的圖片和文案內容
                 var imgSrc = $(this).data('img');
-                var title = $(this).data('Text');
+                var title = $(this).data('text');
                 var description = $(this).data('description');
                 var address = $(this).data('address');
                 var contact = $(this).data('contact');
