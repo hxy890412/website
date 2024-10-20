@@ -407,35 +407,107 @@ ul.see_more{
 .modal-content {
     background-color: #fff;
     margin: 0 auto;
-    padding: 20px;
+    padding: 36px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
     top: 50%;
     position: relative;
     transform: translateY(-50%);
+    border-radius: 16px;
+    
+    height: 600px;
 }
 
+.modal_outer{
+    display: flex;
+    gap: 12px;
+    height: 100%;
+}
+.modal_imgbox{
+    max-width: 60%;
+    height: 100%;
+}
 .modal-content img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.modal-content p {
+.modal_right{
+    padding: 12px 0;
+    text-align: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%; /* 確保 modal_right 區塊填滿高度 */
+}
+
+.modal-content .modal_subtitle {
     font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 8px;
+    color: var(--g01);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--darkgreen);
+    margin-bottom: 12px;
+}
+
+.modal-content .modal_name{
+    font-family: 'GenSenRounded2TW-B', sans-serif;
+    font-size: 24px;
+    color: var(--darkgreen);
+   
+}
+.modal_textcontent{
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+.modal_textcontent::-webkit-scrollbar {
+    width: 15px; 
+}
+
+.modal_textcontent::-webkit-scrollbar-track {
+    background: #e6e6e6; 
+    border-radius: 10px;  
+}
+
+.modal_textcontent::-webkit-scrollbar-thumb {
+    background: var(--lightgreen); /* 滑塊顏色 */
+    border-radius: 10px; /* 滑塊圓角 */
+    border: 3px solid #e6e6e6;
+}
+
+/* 當滑鼠懸停在滑塊上時的顏色變化 */
+.modal_textcontent::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 滑鼠懸停時的滑塊顏色 */
+}
+.modal-content .modal_content{
+    font-family: 'GenSenRounded2TW-R', sans-serif;
+    font-size: 16px;
+    color: #251E1C;
+    line-height: 36px;
+    
 }
 
 .close {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
+    top: -40px;
+    right: 5px;
+    color: var(--darkgreen);
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
     cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: var(--g02);
 }
 
 .s4{
@@ -490,7 +562,45 @@ ul.see_more{
     height: 38px;
 }
 
+@media screen and (max-width:1023px) {
+    
+    .modal_imgbox{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .modal_right{
+        width: 100%;
+        height: auto;
+    }
+    .modal_outer{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        padding-right: 12px;
+    }
 
+    .modal_outer::-webkit-scrollbar {
+        width: 15px; 
+    }
+    .modal_outer::-webkit-scrollbar-track {
+        background: #e6e6e6; 
+        border-radius: 10px;  
+    }
+    .modal_outer::-webkit-scrollbar-thumb {
+        background: var(--lightgreen); /* 滑塊顏色 */
+        border-radius: 10px; /* 滑塊圓角 */
+        border: 3px solid #e6e6e6;
+    }
+    /* 當滑鼠懸停在滑塊上時的顏色變化 */
+    .modal_outer::-webkit-scrollbar-thumb:hover {
+        background: #555; /* 滑鼠懸停時的滑塊顏色 */
+    }
+    .modal-content{
+        padding: 20px;
+    }
+}
 
 @media screen and (max-width:960px) {
     .BN > img{
@@ -577,6 +687,7 @@ ul.see_more{
     .s4 .section_title{
         margin-bottom: 80px;
     }
+   
 
 }
 
@@ -706,6 +817,7 @@ ul.see_more{
     .s3 .section_title{
         margin-bottom: 80px;
     }
+  
 }
     
 
