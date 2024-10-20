@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GenSenRounded2TW-B';
-    src:url(../font/GenSenRounded2TW-B.otf) format("opentype");
+    src:url(../font/GenSenRounded2TW-B.otf) format("opentype"),url(../font/GenSenRounded2TW-B.woff) format("woff");
   }
   @font-face {
     font-family: 'GenSenRounded2TW-R';
