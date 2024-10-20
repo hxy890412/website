@@ -567,7 +567,7 @@ ul.see_more{
         display: flex;
         flex-direction: column;
         gap: 60px;
-        max-width: 500px;
+        max-width: 450px;
     }
     .card_list{
         gap: 60px;
@@ -590,6 +590,26 @@ ul.see_more{
         padding: 36px 20px 16px;
     }
 }
+
+@media screen and (max-width:500px) {
+    .card_title{
+        top: calc((100vw - 120px) / 1.9 - 20px);
+    }
+    .card_title .CT{
+        font-size: 18px;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 20px;  
+    }
+    .card_title img.card_right{
+        height: 40px;
+        width: fit-content;
+    }
+    .card_item > img{
+        height: calc((100vw - 120px) / 1.9);
+    }
+}
+
 
 @media screen and (max-width:400px) {
     .FOR_TOP{
