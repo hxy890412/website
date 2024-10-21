@@ -1107,17 +1107,19 @@ ul.see_more{
         top: 130px;
         max-width: 207px;
     }
+    
+    .s203{
+        left: -60px;
+        top: 720px;
+        width: 34vw;
+    }
+
     .s204{
         width: 7vw;
         height: auto;
         right: 3%;
         top: 700px;
         max-width: 80px;
-    }
-    .s203 {
-        left: -60px;
-        top: 720px;
-        width: 34vw;
     }
    .s205 {
         width: 20vw;
