@@ -917,6 +917,9 @@ ul.see_more{
     .copyright p{
         font-size: 9px;
     }
+    .market_shop ul:first-child{
+        margin-bottom: 16px;
+    }
    
 
 }
@@ -1129,6 +1132,7 @@ ul.see_more{
     .s206{
         left: -20px;
         width: 20vw;
+        top: 65%;
     }
     .s207{
         left: 5%;
