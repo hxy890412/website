@@ -159,6 +159,7 @@ ul.menu a{
     padding: 148px 60px;
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
 .section_title{
     position: relative;
@@ -284,6 +285,7 @@ ul.menu a{
     background: var(--g02);
     padding: 170px 60px 140px;
     position: relative;
+    overflow: hidden;
 }
 .s3::before{
     position: absolute;
@@ -352,6 +354,8 @@ ul.menu a{
     height: 100%;
     object-fit: cover;
 }
+
+
 .market_shop ul li p{
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 18px;
@@ -372,6 +376,8 @@ ul.see_more{
     text-align: center;
     border: 1px solid var(--darkgreen);
     width: fit-content;
+    position: relative;
+    z-index: 2;
 }
 .s3 > a > p{
     font-family: 'Noto Sans TC', sans-serif;
@@ -437,11 +443,12 @@ ul.see_more{
 .modal_imgbox{
     max-width: 60%;
     height: 100%;
+    width: 60%;
 }
 .modal-content img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+   
 }
 
 .modal_right{
@@ -634,19 +641,26 @@ ul.see_more{
     width: 3.5vw;
     height: auto;
     left: 9.3vw;
-    top: 11%;
+    top: 13%;
 }
 .s202{
     width: 10.5vw;
     height: auto;
     right: 0;
-    top: 15%;
+    top: 20%;
 }
 .s203{
     width: 24vw;
     height: auto;
     left: -90px;
-    top: 39vw;
+    top: 60vw;
+}
+
+.s204{
+    width: 4vw;
+    height: auto;
+    right: 8vw;
+    top: 65vw;
 }
 
 @media screen and (max-width:1023px) {
