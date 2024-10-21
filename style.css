@@ -1051,9 +1051,112 @@ ul.see_more{
     .s3 .section_title{
         margin-bottom: 80px;
     }
-  
+
+    .s2 .s02 {
+        width: 90px;
+        height: auto;
+        left: 0vw;
+        top: 32vw;
+        max-width: 173px;
+    }
+    .s2 .s03 {
+        width: 30vw;
+        height: auto;
+        left: -40px;
+        top: 30%;
+    }
+
+    .s2 .s05 {
+        width: 23vw;
+        height: auto;
+        right: -20px;
+        top: 73%;
+        max-width: 250px;
+    }
+
+    .s2 .s06 {
+        width: 29vw;
+        height: auto;
+        left: -30px;
+        bottom: 30px;
+        max-width: 365px;
+    }
+
+    .s2 .s04 {
+        width: 38px;
+        height: auto;
+        right: 5.2vw;
+        top: 50%;
+        max-width: 68px;
+    }
+
+    .s2 .s01 {
+        width: 27vw;
+        height: auto;
+        right: -20px;
+        top: 268px;
+        max-width: 300px;
+    }
+
+
+    .s201{
+        width: 35px;
+        top: 120px;
+
+    }
+    .s202 {
+        width: 100px;
+        height: auto;
+        right: 0;
+        top: 130px;
+        max-width: 207px;
+    }
+    .s204{
+        width: 7vw;
+        height: auto;
+        right: 3%;
+        top: 700px;
+        max-width: 80px;
+    }
+    .s203 {
+        left: -60px;
+        top: 720px;
+        width: 34vw;
+    }
+   .s205 {
+        width: 20vw;
+        right: -40px;
+        top: 55%;
+    }
+    .s206{
+        left: -20px;
+        width: 20vw;
+    }
+    .s207{
+        left: 5%;
+    }
+    .s208{
+        right: 3%;
+    }
+
+    .s302 {
+        max-width: 400px;
+        width: 27vw;
+        top: 23%;
+        right: 0;
+    }
+
+    .s301 {
+        max-width: 290px;
+        width: 20vw;
+        top: 23%;
+        left: 6%;
+    }
+
+    .see_more_open{
+        display: block;
+    }
 }
-    
 
 
 @media screen and (max-width:400px) {
@@ -1073,10 +1176,10 @@ ul.see_more{
         padding: 40px 32px;
     }
     .s3{
-        padding: 80px 32px 70px;
+        padding: 40px 32px 70px;
     }
     .s4{
-        padding: 80px 32px;
+        padding: 40px 32px;
     }
     .BN .button{
         max-width: calc(100% - 64px);
