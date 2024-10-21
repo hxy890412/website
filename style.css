@@ -1,27 +1,32 @@
 @font-face {
     font-family: 'GenSenRounded2TW-B';
-    src:url(../font/GenSenRounded2TW-B.woff) format("woff"),
+    src:url(../font/GenSenRounded2TW-B.woff2) format("woff2"),
+        url(../font/GenSenRounded2TW-B.woff) format("woff"),
         url(../font/GenSenRounded2TW-B.otf) format("opentype");
   }
   @font-face {
     font-family: 'GenSenRounded2TW-R';
-    src:url(../font/GenSenRounded2TW-R.woff) format("woff"),
+    src:url(../font/GenSenRounded2TW-R.woff2) format("woff2"),
+        url(../font/GenSenRounded2TW-R.woff) format("woff"),
         url(../font/GenSenRounded2TW-R.otf) format("opentype");
   }
   @font-face {
     font-family: 'GenSenRounded2TW-H';
-    src:url(../font/GenSenRounded2TW-H.woff) format("woff"),
+    src:url(../font/GenSenRounded2TW-B.woff2) format("woff2"),
+        url(../font/GenSenRounded2TW-H.woff) format("woff"),
         url(../font/GenSenRounded2TW-H.otf) format("opentype");
   }
   @font-face {
     font-family: 'GenSenRounded2TW-L';
-    src:url(../font/GenSenRounded2TW-L.woff) format("woff"),
+    src:url(../font/GenSenRounded2TW-B.woff2) format("woff2"),
+        url(../font/GenSenRounded2TW-L.woff) format("woff"),
         url(../font/GenSenRounded2TW-L.otf) format("opentype");
 
   }
   @font-face {
     font-family: 'GenSenRounded2TW-M';
-    src: url(../font/GenSenRounded2TW-M.woff) format("woff"),
+    src:url(../font/GenSenRounded2TW-B.woff2) format("woff2"),
+        url(../font/GenSenRounded2TW-M.woff) format("woff"),
         url(../font/GenSenRounded2TW-M.otf) format("opentype");
        
   }
