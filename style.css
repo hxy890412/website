@@ -255,6 +255,7 @@ ul.menu a{
     top: 285px;
     left: -14px;
     display: flex;
+    justify-self: flex-start;
 }
 .card_title .CT{
     background: #782700;
@@ -273,6 +274,7 @@ ul.menu a{
     position:relative;
     left:-1px;
 }
+
 .card_title .CT img.card_sticker{
     position: absolute;
     left: 0;
@@ -889,7 +891,7 @@ ul.see_more{
     }
     .card_title img.card_right{
         height: 40px;
-        width: fit-content;
+        width: 22px;
     }
     .card_item > img{
         height: calc((100vw - 120px) / 1.9);
