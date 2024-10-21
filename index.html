@@ -305,7 +305,6 @@
                             </li>
                         </ul>
                         <ul class="see_more">
-                            
                             <li>
                                 <a href="javascript:void(0)" class="market_img">
                                     <img src="img/BN.png" alt="01">
@@ -441,6 +440,11 @@
             <img src="img/s2_03.svg" alt="" class="flowers s203">
             <img src="img/s2_04.svg" alt="" class="flowers s204">
 
+             <!-- 圖片定位 -->
+             <img src="img/s2_05.svg" alt="" class="flowers s205 see_more_open">
+             <img src="img/S2_06.svg" alt="" class="flowers s206 see_more_open">
+             <img src="img/s2_07.svg" alt="" class="flowers s207 see_more_open">
+             <img src="img/s2_08.svg" alt="" class="flowers s208 see_more_open">
 
         </div>
         <div class="s4" id="s3">
@@ -450,6 +454,11 @@
             <div class="action_map">
                 <img src="img/BN02.jpg" alt="test">
             </div>
+            <!-- 圖片定位 -->
+             <img src="img/S301.svg" alt="" class="flowers s301">
+             <img src="img/S302.svg" alt="" class="flowers s302">
+             <img src="img/S303.svg" alt="" class="flowers s303">
+             <img src="img/S304.svg" alt="" class="flowers s304">
         </div>
 
     </div>
@@ -533,6 +542,7 @@
             // 點擊 "看更多" 按鈕後切換顯示與隱藏狀態
             $('.see_more_btn').click(function () {
                 $(".market_shop ul.see_more").toggleClass("show");
+                $(".see_more_open").toggleClass("show");
                 $(".see_more_btn").hide(); // 隱藏 "看更多" 按鈕
                 // 根據顯示狀態更新 Local Storage 和按鈕狀態
                 if ($(".market_shop ul.see_more").hasClass("show")) {

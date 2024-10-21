@@ -413,6 +413,7 @@ ul.menu a{
 
 ul.see_more{
     display: none;
+    position: relative;
 }
 .s3 > a{
     display: block;
@@ -448,6 +449,12 @@ ul.see_more{
 
 .show{
     display: flex!important;
+}
+.see_more_open{
+    display: none;
+}
+.see_more_open.show{
+    display: block;
 }
 .hide{
     display: none;
@@ -578,6 +585,7 @@ ul.see_more{
 .s4{
     padding: 110px 60px;
     background: #98AAA9;
+    position: relative;
 }
 .s4 .section_title{
     margin-bottom: 140px;
@@ -586,6 +594,8 @@ ul.see_more{
     max-width: 1000px;
     height: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 .action_map > img{
     object-fit: cover;
@@ -648,13 +658,15 @@ ul.see_more{
     width: 20vw;
     height: auto;
     right: 0;
-    top:148px
+    top:148px;
+    max-width:300px;
 }
 .s2 .s02{
     width: 9vw;
     height: auto;
     left: 10vw;
     top:12vw;
+     max-width: 173px;
 }
 
 .s2 .s03{
@@ -662,24 +674,28 @@ ul.see_more{
     height: auto;
     left: -70px;
     top:30%;
+    max-width: 384px;
 }
 .s2 .s04{
     width: 68px;
     height: auto;
     right: 5.2vw;
     top:35%;
+    max-width: 68px;
 }
 .s2 .s05{
     width: 13vw;
     height: auto;
     right: -30px;
     top:48%;
+    max-width: 250px;
 }
 .s2 .s06{
     width: 19vw;
     height: auto;
     left: -100px;
     bottom: 18%;
+    max-width: 365px;
 }
 /* 市集攤位圖片定位 */
 .s3{position: relative;}
@@ -687,27 +703,94 @@ ul.see_more{
     width: 3.5vw;
     height: auto;
     left: 9.3vw;
-    top: 13%;
+    top: 200px;
+    max-width: 70px;
 }
 .s202{
     width: 10.5vw;
     height: auto;
     right: 0;
-    top: 20%;
+    top: 480px;
+    max-width: 207px;
 }
 .s203{
     width: 24vw;
     height: auto;
     left: -90px;
-    top: 60vw;
+    top: 800px;
+    max-width: 475px;
 }
 
 .s204{
     width: 4vw;
     height: auto;
     right: 8vw;
-    top: 65vw;
+    top: 1000px;
+    max-width: 80px;
 }
+
+.s205{
+    width: 20vw;
+    height: auto;
+    right: -60px;
+    top: 55%;
+    max-width: 400px ;
+   
+}
+.s206{
+    width: 14vw;
+    height: auto;
+    left: -60px;
+    top: 50%;
+    max-width: 270px;
+}
+
+.s207{
+    width: 3vw;
+    height: auto;
+    left: 12%;
+    bottom: 15%;
+}
+
+.s208{
+    width: 3vw;
+    height: auto;
+    right: 12%;
+    bottom: 20%;
+}
+
+.s301{
+   max-width: 290px;
+   width: 15vw;
+    top :15%;
+    left: 10%;
+}
+
+.s302{
+    max-width: 400px;
+    width: 20vw;
+    top :0%;
+    right: 0;
+ }
+ .s303{
+    max-width: 400px;
+    width: 20vw;
+    top :50%;
+    left: -10vw;
+ }
+ .s304{
+    max-width: 68px;
+    width: 3.5vw;
+    top :45%;
+    right: 5vw;
+ }
+
+
+
+
+
+
+
 
 @media screen and (max-width:1023px) {
     
