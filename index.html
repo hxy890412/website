@@ -715,16 +715,17 @@
                 const isLastList = $(this).closest('ul').is(':last-child'); // 判斷當前<li>是否在最後一個ul中
                 const isSmallScreen = window.matchMedia("(max-width: 1024px)").matches; 
 
-                        // 清除之前的樣式
+                // 清除之前的樣式
                 
                 if (isSmallScreen) {
                     $('.modal_right').css('width', '100%'); // 小於1024時設置為100%
                     $('.modal-content').css('height', '80%'); // 預設高度
+                    $('.modal-content').css('width', '80%'); // 預設高度
                     $('.modal_imgbox').show(); // 預設顯示
                 } else {
                     $('.modal_imgbox').show(); // 預設顯示
                     $('.modal_right').css('width', '40%'); // 預設寬度
-                    $('.modal-content').css('height', '60%'); // 預設高度
+                    $('.modal-content').css('height', '600px'); // 預設高度
                 }
 
             
@@ -735,6 +736,7 @@
                         $('.modal_imgbox').hide(); // 隱藏圖片框
                         $('.modal_right').css('width', '100%'); // 設置寬度為 100%
                         $('.modal-content').css('height', 'auto'); // 設置高度為自動
+                        $('.modal-content').css('width', 'fit-content'); // 設置高度為自動
                     }
                     // 其他情況保持預設樣式
                 }
@@ -745,6 +747,7 @@
                 $('#modaldescription').html($(this).data('description')); 
                 $('#modal').fadeIn();
                 $('body').addClass('body-no-scroll');
+                $('.modal_textcontent, .modal_outer').scrollTop(0);
             });
 
             
