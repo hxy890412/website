@@ -1,68 +1,31 @@
-/* @font-face {
-    font-family: 'GenSenRounded2TW-B';
-    src:url(font/GenSenRounded2TW-B.woff2) format("woff2"),
-        url(font/GenSenRounded2TW-B.woff) format("woff"),
-        url(font/GenSenRounded2TW-B.otf) format("opentype");
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-R';
-    src:
-        url(font/GenSenRounded2TW-R.woff2) format("woff2"),
-        url(font/GenSenRounded2TW-R.woff) format("woff"),
-        url(font/GenSenRounded2TW-R.otf) format("opentype");
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-H';
-    src:
-        url(font/GenSenRounded2TW-B.woff2) format("woff2"),
-        url(font/GenSenRounded2TW-H.woff) format("woff"),
-        url(font/GenSenRounded2TW-H.otf) format("opentype");
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-L';
-    src:
-        url(font/GenSenRounded2TW-B.woff2) format("woff2"),
-        url(font/GenSenRounded2TW-L.woff) format("woff"),
-        url(font/GenSenRounded2TW-L.otf) format("opentype");
 
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-M';
-    src:
-        url(font/GenSenRounded2TW-B.woff2) format("woff2"),
-        url(font/GenSenRounded2TW-M.woff) format("woff"),
-        url(font/GenSenRounded2TW-M.otf) format("opentype");
-       
-  }
-   */
+@font-face {
+font-family: 'GenSenRounded2TW-B';
+src:
+    url(fontv2/GenSenRounded2TW-B.otf) format("opentype");
+}
+@font-face {
+font-family: 'GenSenRounded2TW-R';
+src:
+    url(fontv2/GenSenRounded2TW-R.otf) format("opentype");
+}
+@font-face {
+font-family: 'GenSenRounded2TW-H';
+src:
+    url(fontv2/GenSenRounded2TW-H.otf) format("opentype");
+}
+@font-face {
+font-family: 'GenSenRounded2TW-L';
+src:
+    url(fontv2/GenSenRounded2TW-L.otf) format("opentype");
 
-   @font-face {
-    font-family: 'GenSenRounded2TW-B';
-    src:
-        url(fontv2/GenSenRounded2TW-B.otf) format("opentype");
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-R';
-    src:
-        url(fontv2/GenSenRounded2TW-R.otf) format("opentype");
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-H';
-    src:
-        url(fontv2/GenSenRounded2TW-H.otf) format("opentype");
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-L';
-    src:
-        url(fontv2/GenSenRounded2TW-L.otf) format("opentype");
+}
+@font-face {
+font-family: 'GenSenRounded2TW-M';
+src:url(fontv2/GenSenRounded2TW-M.otf) format("opentype");
+    
+}
 
-  }
-  @font-face {
-    font-family: 'GenSenRounded2TW-M';
-    src:url(fontv2/GenSenRounded2TW-M.otf) format("opentype");
-       
-  }
-  
 :root{
     --darkred:#782700;
     --red:#A23500;
@@ -156,11 +119,17 @@ ul.menu a{
 .FOR_MAIN .BN img{
     width: 100%;
 }
+.btn_text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 6%;
+    right: calc((100vw - 65vw) / 2);
+}
 .BN .button{
     display: flex;
-    position: absolute;
-    bottom: 15%;
-    right: calc((100vw - 65vw) / 2);
     gap: 45px;
 }
 .BN .button a{
@@ -177,6 +146,15 @@ ul.menu a{
 .BN .button a:hover{
     background: var(--red);
     color: var(--gray);
+}
+
+.BN .btn_text p{
+    font-family: 'GenSenRounded2TW-R', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--lightgreen);
+    width: 100%;
+    text-align: center;
 }
 .s1 p{
     font-family: 'GenSenRounded2TW-R', sans-serif;
@@ -527,6 +505,9 @@ ul.see_more{
     color: var(--darkgreen);
    
 }
+.modal-content .modal_name br{
+    display: none;
+}
 .modal_textcontent{
     overflow-y: auto;
     padding-right: 12px;
@@ -781,7 +762,7 @@ ul.see_more{
     right: 5vw;
  }
 
-
+ 
 
 
 
@@ -831,9 +812,9 @@ ul.see_more{
 
 @media screen and (max-width:960px) {
     .BN > img{
-        content: url(img/BN02.jpg);
+        content: url(img/pic/BN_mob.png);
     }
-    .BN .button{
+    .BN .btn_text{
         position: relative;
         justify-content: center;
         bottom: unset;
