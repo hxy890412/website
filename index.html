@@ -399,8 +399,8 @@
                 {
                     "pic": "img/S3_img/攤位資訊頁內照片_07NeoFoods新食成.jpg",
                     "logo" :"img/S3_logo/攤位logo_07NeoFoods新食成.jpg",
-                    "text": "NEO FOODS 新食成",
-                    "subtit": "彈性飲食新選擇",
+                    "text": "Neo Foods 食堂",
+                    "subtit": "植物肉的專家",
                     "description": `&emsp;&emsp;植物肉的脂肪較低且富含膳食纖維，加上零膽固醇，是飲食的新概念，而「彈性飲食」(偶而吃素)更是全球趨勢。
                     <br>&emsp;&emsp;提供多樣美食，讓消費者得到均衡的蛋白質是我們的初衷，在無數次的嘗試與堅持下，終於誕生Neo Foods新創肉。隨著人們對健康和環境的日益關注，對植物性飲食和永續生活感興趣的消費者推動了全球植物性食品產業的產品創新浪潮。
                     <br>&emsp;&emsp;透過消除動物屠宰，Neo Foods為消費者提供一種環保、愛動物的植物性蛋白質替代品，並致力推展到全球市場。`
@@ -507,7 +507,7 @@
                 {
                     "pic": "img/S3_img/攤位資訊頁內照片_18幸運甜點.jpg",
                     "logo" :"img/S3_logo/攤位logo_18幸運甜點.jpg",
-                    "text": "幸運甜點",
+                    "text": "HEUREUX<br>幸運甜點",
                     "subtit": "讓您幸福感湧現的甜點",
                     "description": `
                     &emsp;&emsp;很多人追求幸福與快樂，其實快樂與幸福就藏在日常生活當中，可能是一趟旅行，也可能是一份甜點。
@@ -716,14 +716,13 @@
                 const isSmallScreen = window.matchMedia("(max-width: 1024px)").matches; 
 
                 // 清除之前的樣式
-                
+                $('.modal_imgbox').show(); // 預設顯示
                 if (isSmallScreen) {
                     $('.modal_right').css('width', '100%'); // 小於1024時設置為100%
                     $('.modal-content').css('height', '80%'); // 預設高度
                     $('.modal-content').css('width', '80%'); 
-                    $('.modal_imgbox').show(); // 預設顯示
+                    
                 } else {
-                    $('.modal_imgbox').show(); // 預設顯示
                     $('.modal_right').css('width', '40%'); // 預設寬度
                     $('.modal-content').css('height', '500px'); // 預設高度
                     $('.modal-content').css('max-width', '80%');
