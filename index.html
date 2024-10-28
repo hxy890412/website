@@ -720,12 +720,13 @@
                 if (isSmallScreen) {
                     $('.modal_right').css('width', '100%'); // 小於1024時設置為100%
                     $('.modal-content').css('height', '80%'); // 預設高度
-                    $('.modal-content').css('width', '80%'); // 預設高度
+                    $('.modal-content').css('width', '80%'); 
                     $('.modal_imgbox').show(); // 預設顯示
                 } else {
                     $('.modal_imgbox').show(); // 預設顯示
                     $('.modal_right').css('width', '40%'); // 預設寬度
-                    $('.modal-content').css('height', '600px'); // 預設高度
+                    $('.modal-content').css('height', '500px'); // 預設高度
+                    $('.modal-content').css('max-width', '80%');
                 }
 
             
@@ -736,7 +737,12 @@
                         $('.modal_imgbox').hide(); // 隱藏圖片框
                         $('.modal_right').css('width', '100%'); // 設置寬度為 100%
                         $('.modal-content').css('height', 'auto'); // 設置高度為自動
-                        $('.modal-content').css('width', 'fit-content'); // 設置高度為自動
+                        if (isSmallScreen){
+                            $('.modal-content').css('max-width', '350px'); 
+                        }else{
+                            $('.modal-content').css('max-width', '450px'); 
+                        }
+                        
                     }
                     // 其他情況保持預設樣式
                 }

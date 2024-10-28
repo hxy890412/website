@@ -462,7 +462,7 @@ ul.see_more{
     position: relative;
     transform: translateY(-50%);
     border-radius: 16px;
-    height: 600px;
+    height: 500px;
 }
 
 .modal_outer{
