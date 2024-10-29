@@ -997,7 +997,8 @@ ul.see_more{
         font-size: 18px;
         line-height: 40px;
         height: 40px;
-        padding: 0 0 0 15px; 
+        padding: 0 0 0 12px; 
+        text-align: left;
     }
     .card_title img.card_right{
         height: 40px;
