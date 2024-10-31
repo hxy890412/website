@@ -1059,6 +1059,19 @@ ul.see_more{
    .s1{
     padding: 0 60px 50px;
    }
+   .qrcode_fixed{
+    width: 150px;
+   }
+   .qrcode_fixed .qrcode_img{
+    width: 150px;
+    height: 150px;
+   }
+   .qrcode_fixed .qrcode_Text{
+    font-size: 24px;
+   }
+   .s3 .section_title{
+    margin-bottom: 60px;
+   }
 
 }
 
