@@ -1074,6 +1074,15 @@ ul.see_more{
    .s3 .section_title{
     margin-bottom: 60px;
    }
+   .location_info ul > li{
+    font-size: 16px;
+   }
+   .location_info ul > li:first-child{
+    font-size: 20px;
+   }
+   .location_info{
+    gap: 8px;
+   }
 
 }
 
