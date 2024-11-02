@@ -752,7 +752,7 @@ ul.see_more{
  .map_area{
     background: var(--g02);
     width: 100%;
-    padding: 180px 60px;
+    padding: 180px 60px 200px; 
     position: relative;
     overflow: hidden;
  }
