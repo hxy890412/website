@@ -546,16 +546,22 @@ ul.see_more{
     margin-bottom: 60px;
 }
 .action_map{
-    max-width: 1000px;
-    height: 750px;
-    margin: 0 auto;
+    /* max-width: 1000px; */
+    /* margin: 0 auto;
     position: relative;
-    z-index: 2;
+    z-index: 2; */
+    width: 100%;
+    padding-bottom: 80%;
+    height: 0;
+    overflow: hidden;
 }
 .action_map > img{
-    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .FOR_FOOTER{
@@ -786,6 +792,8 @@ ul.see_more{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 .location_info{
     display: flex;
@@ -848,6 +856,8 @@ ul.see_more{
     padding: 12px 32px;
     align-items: center;
     transition: all 0.3s ease-in;
+    z-index: 2;
+    position: relative;
 }
 
 .interaction a:hover{
@@ -867,14 +877,14 @@ ul.see_more{
     gap: 24px;
     align-items: center;
     z-index: 998;
-    width: 235px;
+    width: 150px;
     height: auto;
     transition: all 0.3s ease-in;
 }
 
 .qrcode_fixed .qrcode_img{
-    width: 235px;
-    height: 235px;
+    width: 150px;
+    height: 150px;
     padding: 10px;
     background: #FFF;
     box-shadow: 8px 8px #5c8b8c;
@@ -886,7 +896,7 @@ ul.see_more{
 }
 .qrcode_fixed .qrcode_Text{
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
     background: var(--darkgreen);
@@ -924,6 +934,89 @@ a.qrcode_fixed:hover{
     border: 0;
 }
 
+/* 市集攻略 */
+.s4.market_strategy{
+    padding: 0;
+    position: relative;
+}
+.img_outer{
+    padding: 110px 60px;
+    background: #98AAA9;
+    position: relative;
+    overflow: hidden;
+}
+.market_strategy .s201{
+        top: 25%;
+        left: 8%;
+        width: 3.5vw;
+}
+.market_strategy .s201_2{
+    display: none
+}
+
+.market_strategy .s205{
+    width: 16vw;
+    min-width: 150px;
+    top: 16%;
+    right: -80px;
+}
+
+.market_strategy .s203{
+    top: 50%;
+    left: -130px;
+}
+.market_strategy .s208{
+    top: 50%;
+    right: 8%;
+}
+
+.market_strategy .img05{
+    width: 10vw;
+    bottom: 10%;
+    right: -80px;
+    transform: rotateX(-178deg) rotateZ(275deg);
+}
+
+.s4.interaction .s203{
+    top: 15%;
+    width: 20vw;
+}
+.s4.interaction .s207_1{
+    right: 7%;
+    width: 3.5vw;
+    top: 30%;
+}
+.s4.interaction .s207_2{
+    bottom: 30%;
+    width: 3.5vw;
+    left: 6%;
+
+}
+.s4.interaction .s302{
+    width: 16vw;
+    bottom: 15%;
+    right: -30px;
+    top: unset;
+    transform: rotateZ(309deg);
+}
+
+.s4.interaction .s303_mob, .s4.interaction .S2_05{
+    display: none;
+}
+.s4.interaction{
+    padding: 0;
+}
+.interaction_outer{
+    padding: 170px 60px 80px;
+    position: relative;
+    overflow: hidden;
+}
+.map_1000px{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
 
 
 
@@ -1109,6 +1202,9 @@ a.qrcode_fixed:hover{
    .location_info{
     gap: 8px;
    }
+   .interaction_outer{
+    padding: 130px 60px 60px;
+   }
 
 }
 
@@ -1187,7 +1283,92 @@ a.qrcode_fixed:hover{
         text-align: center;
         line-height: 48px;
     }
+    .s2 .s06{
+     left: -50px;   
+    }
 
+    .map_area .s302{
+        max-width: 400px;
+        width: 27vw;
+        top: 15%;
+        right: -8%;
+    }
+    .map_area .s303{
+        width: 150px;
+        top: 70%;
+        left: -19%;
+    }
+
+    .map_area .s304{
+        width: 49px;
+        right: 10%;
+        top: 60%;
+    }
+
+    .market_strategy .s205{
+        width: 190px;
+        top: 19%;
+    }
+
+    .market_strategy .s201{
+        top: 23%;
+        width: 36px;
+    }
+    .market_strategy .s203{
+        left: -60px;
+        top: unset;
+        bottom: 5%;
+        width: 210px;
+    }
+
+    .market_strategy .s208{
+        bottom: 15%;
+        width: 20px;
+        top: unset;
+        right: 3%;
+    }
+
+    .market_strategy .img05{
+        display: none;
+    }
+    .market_strategy .s201_2{
+        display: block;
+        bottom: 5%;
+        right: 13%;
+        /* width: 3.5vw; */
+        width: 30px;
+    }
+    .s4.interaction .s203{
+        left: -100px;
+        width: 190px;
+        rotate: -32deg;
+    }
+   
+    .s4.interaction .s207_1 {
+        width: 20px;
+        top: 12%;
+    }
+    .s4.interaction .s303_mob{
+        display: block;
+        width: 190px;
+        bottom: 10%;
+        right: -100px;
+        rotate: 180deg;
+    }
+    .s4.interaction .S2_05{
+        width: 200px;
+        left: -70px;
+        bottom: 6%;
+        display: block;
+        rotate: 149deg
+    }
+    .s4.interaction .s302{
+        top: 24%;
+        bottom: unset;
+        width: 170px;
+        rotate: 60deg;
+        right: -50px;
+    }
     
 }
 
@@ -1351,6 +1532,7 @@ a.qrcode_fixed:hover{
     .BN p.btn_text{
         font-size: 16px;
     }
+   
 }
 
 
