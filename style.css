@@ -754,6 +754,7 @@ ul.see_more{
     width: 100%;
     padding: 120px 60px;
     position: relative;
+    overflow: hidden;
  }
  .map_area::before{
     position: absolute;
