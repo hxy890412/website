@@ -562,7 +562,7 @@ ul.see_more{
     position: relative;
     z-index: 2; */
     width: 100%;
-    padding-bottom: 80%;
+    padding-bottom: 75%;
     height: 0;
     overflow: hidden;
 }
@@ -802,7 +802,7 @@ ul.see_more{
     align-items: center;
     height: auto;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
@@ -810,7 +810,6 @@ ul.see_more{
 .location_info{
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 .location_info ul > li{
     font-family: 'GenSenRounded2TW-R', sans-serif;
