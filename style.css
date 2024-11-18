@@ -574,6 +574,15 @@ ul.see_more{
     height: 100%;
     object-fit: cover;
 }
+.map_1000px .auto_size{
+    height: auto;
+    padding: 0;
+}
+.map_1000px .auto_size > img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 
 .FOR_FOOTER{
     width: 100%;
@@ -1270,9 +1279,7 @@ a.qrcode_fixed:hover{
     .text_section{
         padding: 36px 20px 16px;
     }
-    .action_map{
-        max-height: 450px;
-    }
+   
     .market_shop ul{
         justify-content: space-evenly;
     }
