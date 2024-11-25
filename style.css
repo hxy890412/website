@@ -132,7 +132,7 @@ ul.menu a{
     width: fit-content;
     position:absolute;
     bottom: 24%;
-    right: calc((100vw - 65vw) / 2 + 3.5%);
+    right: calc((100vw - 65vw) / 2 + -0.5%);
 }
 .s1 p{
     font-family: 'GenSenRounded2TW-R', sans-serif;
