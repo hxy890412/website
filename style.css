@@ -131,7 +131,7 @@ ul.menu a{
     text-align: center;
     width: fit-content;
     position:absolute;
-    bottom: 24%;
+    bottom: 21%;
     right: calc((100vw - 65vw) / 2 + -0.5%);
 }
 .s1 p{
@@ -292,6 +292,28 @@ ul.menu a{
     bottom: -10px ;
     width: 14px;
 }
+
+/* 卡片新增按鈕 */
+.sign_btn{
+    position: absolute;
+    bottom: 26px;
+    right: 26px;
+    display: block;
+    background-color: #782700;
+    color: #FFF;
+    font-family: 'GenSenRounded2TW-b', sans-serif;
+    font-size: 20px;
+    line-height: 42px;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+    padding: 8px 32px;
+    transition: all 0.2s ease-in;
+}
+.sign_btn:hover{
+    background-color: #933608;
+    letter-spacing: 0.1rem;
+}
+
 
 .s3{
     width: 100%;
@@ -1061,7 +1083,28 @@ a.qrcode_fixed:hover{
     color: #A23500;
 }
 
+/* 人文特展版位 */
+.exhibition_part{
+    background: #98AAA9;
+    padding: 148px 60px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
 
+.exhibition_part .section_title{
+    margin-bottom: 40px;
+}
+
+.exhibition_part .card_item{
+    flex: 1;
+}
+.exhibition_part .card_list{
+    gap: 20px;
+}
+.exhibition_part .card_section{
+    max-width: 1200px;
+}
 
 
 @media screen and (max-width:1023px) {
@@ -1247,6 +1290,13 @@ a.qrcode_fixed:hover{
    }
    .interaction_outer{
     padding: 130px 60px 60px;
+   }
+   .sign_btn{
+    position: relative;
+    font-size: 18px;
+    line-height: 36px;
+    bottom: unset;
+    right: unset;
    }
 
 }
@@ -1610,4 +1660,5 @@ a.qrcode_fixed:hover{
         line-height: 48px;
     }
 }
+
 
