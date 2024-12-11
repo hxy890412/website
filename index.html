@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 輪播插件 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 </head>
 <body>
@@ -75,6 +78,32 @@
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- 輪播區域 -->
+            <div class="img_carousel">
+                <div class="carousel-container">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <a href="#"><img src="img/owl/01.png" alt="Image 1"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/owl/02.png" alt="Image 2"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/owl/03.png" alt="Image 3"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/owl/01.png" alt="Image 4"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/owl/02.png" alt="Image 4"></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/owl/03.png" alt="Image 4"></a>
+                        </div>
+                       
+                    </div>
                 </div>
             </div>
         </div>
@@ -592,7 +621,33 @@
     <div class="copyright">
         <p>Copyright © Tzu Chi Culture and Communication Foundation. All rights reserved.<br>版權註記：以上任何文字影音著作皆屬慈濟版權所有，感恩您尊重智慧財產權，請勿擅自重製、轉貼、節錄及不得以任何方法曲解畫面原意，未經同意不得以任何形式利用之。</p>
     </div>
-
+    <!-- 輪播 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 40,
+                nav: true,
+                dots: true,
+                center:true,
+                stagePadding: 150,
+                navText: ["&#8249;", "&#8250;"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 
     <script>
         $(document).ready(function () {

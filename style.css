@@ -792,23 +792,13 @@ ul.see_more{
  /* 如何抵達 */
 
  .map_area{
-    background: var(--g02);
+    background: var(--g01);
     width: 100%;
-    padding: 180px 60px 200px; 
+    padding: 80px 60px 200px; 
     position: relative;
     overflow: hidden;
  }
- .map_area::before{
-    position: absolute;
-    display: block;
-    content: '';
-    background: url(img/area_one_bg.svg)no-repeat top center;
-    background-size: 100%;
-    top: -1px;
-    left: 0;
-    width: 100%;
-    height: 200px;
-}
+ 
 
 .map_area .section_title{
     margin-bottom: 60px;
@@ -855,18 +845,7 @@ ul.see_more{
     font-size: 24px;
 }
 
-.s4:before {
-    position: absolute;
-    display: block;
-    content: '';
-    background: url(img/area_two_bg.svg) no-repeat bottom center;
-    background-size: 100%;
-    top: -197px;
-    left: 0;
-    width: 100%;
-    max-height: 200px;
-    height: 200px;
-}
+
 /* 互動導覽 */
 .interaction{
     padding: 150px 60px 80px;
@@ -981,9 +960,35 @@ a.qrcode_fixed:hover{
     padding: 0;
     position: relative;
 }
+
+.s4.market_strategy::before{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(img/area_one_bg.svg) no-repeat top center;
+    background-size: 100%;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+}
+.s4.market_strategy::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(img/area_two_bg.svg) no-repeat bottom center;
+    background-size: 100%;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
+    z-index: 2;
+}
 .img_outer{
     padding: 110px 60px;
-    background: #98AAA9;
+    background: var(--g02);
     position: relative;
     overflow: hidden;
 }
@@ -1047,6 +1052,7 @@ a.qrcode_fixed:hover{
 }
 .s4.interaction{
     padding: 0;
+    background: var(--g01);
 }
 .interaction_outer{
     padding: 170px 60px 80px;
@@ -1085,11 +1091,35 @@ a.qrcode_fixed:hover{
 
 /* 人文特展版位 */
 .exhibition_part{
-    background: #98AAA9;
+    background: #A8BABA url(img/owl/exh_bg.png) no-repeat top / cover;
     padding: 148px 60px;
     width: 100%;
     text-align: center;
     overflow: hidden;
+    position: relative;
+}
+.exhibition_part::before{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(img/area_one_bg.svg) no-repeat top center;
+    background-size: 100%;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+.exhibition_part::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(img/area_two_bg.svg) no-repeat bottom center;
+    background-size: 100%;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
 }
 
 .exhibition_part .section_title{
@@ -1106,6 +1136,121 @@ a.qrcode_fixed:hover{
     max-width: 1200px;
 }
 
+/* 輪播 */
+
+.img_carousel{
+    margin-top: 48px;
+}
+.owl-carousel {
+    position: relative;
+    padding: 0 20px;
+}
+
+.owl-carousel::before,
+.owl-carousel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background: rgba(209, 214, 194, 1); 
+    pointer-events: none;
+    z-index: 10;
+}
+
+.owl-carousel::before {
+    left: 20px;
+    background: linear-gradient(to right, rgba(209, 214, 194, 1) 0%, rgba(209, 214, 194, 0) 100%); /* 左邊漸層 */
+}
+
+.owl-carousel::after {
+    right: 20px;
+    background: linear-gradient(to left, rgba(209, 214, 194, 1) 0%, rgba(209, 214, 194, 0) 100%); /* 右邊漸層 */
+}
+
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.owl-carousel .owl-stage-outer{
+    padding: 5px 0;
+}
+
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1080 / 1920; /* Maintain 1080x1920 aspect ratio */
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 75%);
+}
+
+.owl-carousel .item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owl-nav {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+.owl-nav button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 36px;
+}
+
+.owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: #55574E;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.owl-dots .owl-dot.active span {
+    background: #A8BABA;
+}
+
+.img_carousel .owl-carousel .owl-nav button.owl-prev, .img_carousel .owl-carousel .owl-nav button.owl-next{
+    width: 32px;
+    height: 32px;
+    background: url(img/owl/c_arrow.png) no-repeat center / 100%;
+    text-indent: -99999px;
+}
+
+.img_carousel .owl-carousel .owl-nav button.owl-prev{
+    transform: scaleX(-1);
+}
 
 @media screen and (max-width:1023px) {
     
