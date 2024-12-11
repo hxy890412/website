@@ -992,7 +992,7 @@ a.qrcode_fixed:hover{
     z-index: 2;
 }
 .img_outer{
-    padding: 110px 60px;
+    padding: 150px 60px;
     background: var(--g02);
     position: relative;
     overflow: hidden;
