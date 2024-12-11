@@ -110,6 +110,7 @@ ul.menu a{
 .FOR_MAIN{
     width: 100%;
     padding-top: 80px;
+    overflow: hidden;
 }
 .FOR_MAIN .BN{
     width: 100%;
@@ -295,10 +296,8 @@ ul.menu a{
 
 /* 卡片新增按鈕 */
 .sign_btn{
-    position: absolute;
-    bottom: 26px;
-    right: 26px;
-    display: block;
+    display: inline-block;
+    width: fit-content;
     background-color: #782700;
     color: #FFF;
     font-family: 'GenSenRounded2TW-b', sans-serif;
@@ -313,6 +312,12 @@ ul.menu a{
     background-color: #933608;
     letter-spacing: 0.1rem;
 }
+
+.btn_outer{
+    text-align: right;
+}
+
+
 
 
 .s3{
@@ -1185,19 +1190,20 @@ a.qrcode_fixed:hover{
     align-items: center;
     overflow: hidden;
     width: 100%;
-    aspect-ratio: 1080 / 1920; /* Maintain 1080x1920 aspect ratio */
+    height: auto;
+    /* aspect-ratio: 1080 / 1920;  */
     box-shadow: 2px 2px 5px rgb(0 0 0 / 75%);
 }
 
 .owl-carousel .item a {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .owl-carousel .item img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -1395,15 +1401,15 @@ a.qrcode_fixed:hover{
         margin-bottom: 16px;
     }
     .BN p.btn_text{
-        font-size: 24px;
-        bottom: 6%;
+        font-size: 16px;
+        bottom: 4%;
         width: 100%;
         right: unset;
         left: 50%;
         transform: translateX(-50%);
     }
    .s1{
-    padding: 0 60px 50px;
+    padding: 0 0px 50px;
    }
    .qrcode_fixed{
     width: 70px;
@@ -1442,6 +1448,13 @@ a.qrcode_fixed:hover{
     line-height: 36px;
     bottom: unset;
     right: unset;
+   }
+
+   .yt_box_outer{
+    padding: 0 40px;
+   }
+   .s1 p{
+    padding: 0 40px;
    }
 
 }
@@ -1765,6 +1778,7 @@ a.qrcode_fixed:hover{
     }
     .BN p.btn_text{
         font-size: 16px;
+        bottom: 2%;
     }
    
 }
@@ -1784,7 +1798,7 @@ a.qrcode_fixed:hover{
         padding: 20px 20px 16px;
     }
     .s1{
-        padding: 40px 32px;
+        padding: 40px 8px;
     }
     .s3{
         padding: 40px 32px 70px;
