@@ -1231,6 +1231,7 @@ a.qrcode_fixed:hover{
     display: flex;
     justify-content: space-between;
     z-index: 20;
+    pointer-events: none;
 }
 
 .owl-nav button {
@@ -1241,6 +1242,7 @@ a.qrcode_fixed:hover{
     width: 50px;
     height: 50px;
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .owl-dots {
@@ -1323,6 +1325,10 @@ a.qrcode_fixed:hover{
     }
     .map_area{
         padding: 100px 60px;
+    }
+    .exhibition_part .card_list{
+        flex-direction: column;
+        gap: 60px;
     }
     
 
@@ -1460,9 +1466,10 @@ a.qrcode_fixed:hover{
    .sign_btn{
     position: relative;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 24px;
     bottom: unset;
     right: unset;
+    margin-top: 8px;
    }
 
    .yt_box_outer{
