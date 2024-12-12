@@ -274,7 +274,7 @@ ul.menu a{
     color: #FFF;
     position: relative;
     display: flex;
-    padding: 12px 0 12px 20px;
+    padding: 12px 0 12px 12px;
     font-family: 'GenSenRounded2TW-b', sans-serif;;
     font-size: 20px;
     line-height: 42px;
@@ -302,7 +302,7 @@ ul.menu a{
     color: #FFF;
     font-family: 'GenSenRounded2TW-b', sans-serif;
     font-size: 20px;
-    line-height: 42px;
+    line-height: 32px;
     letter-spacing: 0.05rem;
     z-index: 2;
     padding: 8px 32px;
