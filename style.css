@@ -591,15 +591,14 @@ ul.see_more{
 .s4 .section_title{
     margin-bottom: 60px;
 }
-.action_map{
-    /* max-width: 1000px; */
-    /* margin: 0 auto;
-    position: relative;
-    z-index: 2; */
+.interaction a.action_map{
     width: 100%;
+    padding: unset;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    display: block;
+    border: 0;
 }
 .action_map > img{
     position: absolute;
@@ -1046,37 +1045,6 @@ a.qrcode_fixed:hover{
     background: var(--g02);
     position: relative;
     overflow: hidden;
-}
-.market_strategy .s201{
-        top: 25%;
-        left: 8%;
-        width: 3.5vw;
-}
-.market_strategy .s201_2{
-    display: none
-}
-
-.market_strategy .s205{
-    width: 16vw;
-    min-width: 150px;
-    top: 16%;
-    right: -80px;
-}
-
-.market_strategy .s203{
-    top: 50%;
-    left: -130px;
-}
-.market_strategy .s208{
-    top: 50%;
-    right: 8%;
-}
-
-.market_strategy .img05{
-    width: 10vw;
-    bottom: 10%;
-    right: -80px;
-    transform: rotateX(-178deg) rotateZ(275deg);
 }
 
 
