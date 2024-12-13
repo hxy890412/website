@@ -559,7 +559,7 @@
             </div>
         </div>
         <!-- 互動導覽 -->
-        <div class="s4 interaction" id="s6">
+        <div class="s4 interaction interaction_openBG" id="s6">
             <div class="interaction_outer">
                 <div class="section_title">
                     <h1>互動導覽</h1>
@@ -585,7 +585,7 @@
                         <br>
                         <span class="text_R">一連串的冒險將在關渡靜思堂展開</span>
                     </p>
-                    <img src="img/interaction/img02.jpeg" alt="" style="width: 570px; margin: 60px auto;">
+                    <img src="img/interaction/img02.jpeg" alt="" class="it_img02">
                     <p class="text_R">
                         <span class="text_b">你將會遇見</span>
                         <br><span class="Green_dots">記者費斯 Faith</span>
@@ -630,13 +630,7 @@
                         <br><span class="small_text">禮物發送完畢為止，大會保留隨時修正、暫停、終止或解釋本活動之最終權利。</span>
                     </p>
                 </div>
-                <!-- 圖片定位 -->
-                <img src="img/s2_03.svg" alt="" class="flowers s203">
-                <img src="img/S2_07.svg" alt="" class="flowers s207_1">
-                <img src="img/S302.svg" alt="" class="flowers s302">
-                <img src="img/S2_07.svg" alt="" class="flowers s207_2">
-                <img src="img/S303.svg" alt="" class="flowers s303_mob">
-                <img src="img/S2_05.svg" alt="" class="flowers S2_05">
+               
             </div>
         </div>
 
@@ -786,9 +780,11 @@
              if (localStorage.getItem("interaction_step_visible") === "false") {
                 $(".interaction_step").addClass("show");
                 $(".see_more_btn").hide(); // 隱藏 "看更多" 按鈕
+                $(".s4.interaction").toggleClass("interaction_openBG");
             } else {
                 $(".interaction_step").removeClass("show");
                 $(".interactionBtn").show(); // 確保按鈕可見
+                $(".s4.interaction").addClass("interaction_openBG");
             }
 
             // 點擊 "大冒險按鈕" 按鈕後切換顯示與隱藏狀態

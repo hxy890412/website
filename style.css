@@ -860,10 +860,16 @@ ul.see_more{
 
 
 /* 互動導覽 */
-.interaction{
-    padding: 150px 60px 80px;
-    background:var(--g02);
+
+
+.s4.interaction{
+    padding: 0;
+    background: var(--g01) url(img/owl/interaction_bg-close.png) no-repeat top center / 100%;
     position: relative;
+}
+
+.s4.interaction.interaction_openBG{
+    background: var(--g01) url(img/owl/interaction_bg-open.png) no-repeat top center / 100%;
 }
 .interaction::before{
     position: absolute;
@@ -1073,36 +1079,7 @@ a.qrcode_fixed:hover{
     transform: rotateX(-178deg) rotateZ(275deg);
 }
 
-.s4.interaction .s203{
-    top: 15%;
-    width: 20vw;
-}
-.s4.interaction .s207_1{
-    right: 7%;
-    width: 3.5vw;
-    top: 30%;
-}
-.s4.interaction .s207_2{
-    bottom: 30%;
-    width: 3.5vw;
-    left: 6%;
 
-}
-.s4.interaction .s302{
-    width: 16vw;
-    bottom: 15%;
-    right: -30px;
-    top: unset;
-    transform: rotateZ(309deg);
-}
-
-.s4.interaction .s303_mob, .s4.interaction .S2_05{
-    display: none;
-}
-.s4.interaction{
-    padding: 0;
-    background: var(--g01);
-}
 .interaction_outer{
     padding: 200px 60px 80px;
     position: relative;
@@ -1141,7 +1118,7 @@ a.qrcode_fixed:hover{
 
 /* 人文特展版位 */
 .exhibition_part{
-    background: #A8BABA url(img/owl/exh_bg.png) no-repeat top / cover;
+    background: #A8BABA url(img/owl/exh_bg.png) no-repeat top / 100%;
     padding: 160px 60px;
     width: 100%;
     text-align: center;
@@ -1328,6 +1305,11 @@ a.qrcode_fixed:hover{
     color: #251E1C;
     line-height: 49px;
     margin-bottom: 60px;
+}
+.interaction_step .it_img02{
+    max-width: 570px;
+    margin: 60px auto;
+    width: 100%
 }
 
 
@@ -1536,6 +1518,32 @@ a.qrcode_fixed:hover{
     padding: 0 40px;
    }
 
+   .interaction_intro{
+    font-size: 20px;
+    line-height: 36px;
+   }
+   .lineheigh_s{
+    line-height: 32px;
+   }
+   .interaction_step{
+    font-size: 20px;
+    line-height: 36px;
+   }
+   .greentext{
+    font-size: 24px;
+   }
+   .small_text{
+    font-size: 14px;
+    line-height: 16px;
+   }
+
+   .s4.interaction{
+    background: var(--g01) url(img/owl/mob_interaction_bg-close.png) no-repeat top center / 100%;
+   }
+   .s4.interaction.interaction_openBG {
+    background: var(--g01) url(img/owl/mob_interaction_bg-open.png) no-repeat top center / 100%;
+    }
+
 }
 
 @media screen and (max-width:768px){
@@ -1698,6 +1706,10 @@ a.qrcode_fixed:hover{
     }
     .exhibition_part .card_list{
         gap: 60px;
+    }
+    .exhibition_part{
+        background: #A8BABA url(img/owl/exh_bg_mob.png) no-repeat top / 100%;
+     
     }
     
 }
