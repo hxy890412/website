@@ -450,7 +450,7 @@
                          <!-- 02-->
                         <li class="card_item">
                             <div class="img-box">
-                                <img src="img/exh/02.jpg" alt="01">
+                                <img src="img/exh/03.png" alt="【防災follow me 環保 let’s go】環保防災教育展">
                             </div>
                             <div class="text_section">
                                 <p>&emsp;&emsp;這個展錯過太可惜，闖關遊戲，考考大人小孩對於環保與防災知多少，戴上VR眼鏡悠遊海洋，跳舞機牢記隨身五寶，蔬食減碳連連看，另外，居家電器使用安全、火災濃煙保命方法、地震防災包放哪兒?最後，還有主播體驗區，您也是環保尖兵、防災大使喔。
@@ -474,7 +474,7 @@
                         </li>
                         <li class="card_item">
                             <div class="img-box">
-                                <img src="img/exh/03.png" alt="01">
+                                <img src="img/exh/02.jpg" alt="【沙漠湧泉．EI Menahil】滿納海學校．靜思語特展">
                             </div>
                             <div class="text_section">
                                 <p>&emsp;&emsp;一句靜思語一幅畫，串起每一張在戰火中的童顏。土耳其滿納海學校的故事，您聽過嗎？十年光陰，見證教育化解仇恨帶來希望，敘利亞難民孩童，撕下標籤開啟新人生。滿納海‧沙漠中的泉源，也是心的甘霖，就從這裡開始感受一句句好話的力量。
@@ -564,12 +564,72 @@
                 <div class="section_title">
                     <h1>互動導覽</h1>
                 </div>
+                <div class="interaction_intro">
+                    慈濟關渡靜思堂×關渡人文藝術週×實境導覽遊戲<br>
+                    <span class="text_b">《萊特大冒險》</span><br>
+                    關渡人文藝術週期間搶先體驗<br>
+                    闖關完成就有機會抽中超幸福大獎 
+                </div>
                 <div class="map_1000px">
                     <div class="action_map">
-                        <img src="img/pic/BN.png" alt="test">
+                        <img src="img/interaction/img01.jpg" alt="test">
                     </div>
                 </div>
-                <a href="#">立即前往體驗</a>
+                <a href="javascript:void(0)" class="interactionBtn" id="interactionbtn">萊特大冒險精彩搶先看</a>
+                <!-- 隱藏展開 -->
+                <div class="interaction_step">
+                    <p class="text_b lineheigh_s">
+                        一封遠方國度的未知求救信<br>
+                        ×<br>
+                        一隻想飛更遠的勇敢火金姑<br>
+                        <br>
+                        <span class="text_R">一連串的冒險將在關渡靜思堂展開</span>
+                    </p>
+                    <img src="img/interaction/img02.jpeg" alt="" style="width: 570px; margin: 60px auto;">
+                    <p class="text_R">
+                        <span class="text_b">你將會遇見</span>
+                        <br><span class="Green_dots">記者費斯 Faith</span>
+                        <br><span class="Green_dots">廚師維斯 Vows</span>
+                        <br><span class="Green_dots">還有更多隱藏人物...！</span>
+                        <br>
+                        <br>你需要蒐集更多火金姑夥伴
+                        <br>照亮更遠的地方
+                        <br>拯救遠方需要被幫助的人
+                        <br>
+                        <br>
+                        <p class="text_b greentext">【該如何開始】</p>
+                        請至【關渡人文藝術週】活動現場入口處尋找互動導覽櫃檯
+                        <br>加入大愛之友官方LINE帳號即可開始搶先體驗
+                        <br>
+                        <br>
+                        <p class="text_b greentext">【解謎的資訊】</p>
+                        <p class="text_b">遊玩方式</p>
+                        觀看手機網頁內劇情與任務，移動到指定地點，破解關卡。
+                        <br>
+                        <br>
+                        <p class="text_b">遊戲時間</p>
+                        本遊戲長度約 20 分鐘
+                        <br>解謎開放時間配合大會公告起訖時間
+                        <br>無需預約、無時間限制，最佳方式就是留時間享受
+                        <br>解謎、市集、表演一次滿足！
+                        <br>
+                        <br>
+                        <p class="text_b">適合年齡</p>
+                        親子、小孩、大人、全年齡皆可玩！！
+                        <br>考量謎題難度、遊戲玩法，
+                        <br>10~16 歲以下建議有大人陪同。
+                        <br>
+                        <br>
+                        <p class="text_b">需要上網</p>
+                        玩家自備：智慧型手機。現場提供免費網路。
+                        <br>
+                        <br>
+                        <p class="text_b greentext">【超幸福禮物】</p>
+                        闖關完成就有機會抽中超幸福禮物
+                        <br>常不輕下午茶餐券 乙張
+                        <br><span class="small_text">禮物發送完畢為止，大會保留隨時修正、暫停、終止或解釋本活動之最終權利。</span>
+                    </p>
+                </div>
                 <!-- 圖片定位 -->
                 <img src="img/s2_03.svg" alt="" class="flowers s203">
                 <img src="img/S2_07.svg" alt="" class="flowers s207_1">
@@ -721,6 +781,31 @@
                     $(".see_more_btn").show(); // 顯示按鈕 (這裡只是保險，如果需要顯示較少功能)
                 }
             });
+
+             // 初始檢查 Local Storage 狀態，決定是否顯示 "大冒險按鈕" 的內容
+             if (localStorage.getItem("interaction_step_visible") === "false") {
+                $(".interaction_step").addClass("show");
+                $(".see_more_btn").hide(); // 隱藏 "看更多" 按鈕
+            } else {
+                $(".interaction_step").removeClass("show");
+                $(".interactionBtn").show(); // 確保按鈕可見
+            }
+
+            // 點擊 "大冒險按鈕" 按鈕後切換顯示與隱藏狀態
+            $('.interactionBtn').click(function () {
+                $(".interaction_step").toggleClass("show");
+                $(".interactionBtn").hide(); // 隱藏 "看更多" 按鈕
+                // 根據顯示狀態更新 Local Storage 和按鈕狀態
+                if ($(".interaction_step").hasClass("show")) {
+                    localStorage.setItem("interaction_step_visible", "true");
+                    $(".see_more_btn").hide(); // 隱藏 "看更多" 按鈕
+                } else {
+                    localStorage.setItem("interaction_step_visible", "false");
+                    $(".interactionBtn").show(); // 顯示按鈕 (這裡只是保險，如果需要顯示較少功能)
+                }
+            });
+
+
 
             document.querySelectorAll('img').forEach(img => img.setAttribute('loading', 'lazy'));
 

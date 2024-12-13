@@ -56,15 +56,3 @@ ol,ul,li {
 
 a{text-decoration: none;color: unset;}
 
-:root{
-    --primary:#867FDB;
-    --linearbg:linear-gradient(90deg, rgba(254,223,255,0.5) 0%, rgba(225,223,255,0.5) 100%);
-	--linearbg2:linear-gradient(90deg, rgba(254,223,255,0.8) 0%, rgba(225,223,255,0.8) 100%);
-	--title_bottom_linearbg:linear-gradient(90deg, rgba(100,91,210,0.5) 0%, rgba(221,110,217,1) 67%, rgba(255,154,154,1) 100%);
-    --green_text:#17A5B2;
-    --linear_text: linear-gradient(90deg, #ADA6FF 0%, #FFA1EA 50%, #FFB2B2 100%);
-	--gray:#505050;
-	--pida:#39B56D;
-	--pida2:#F2F8F4;
-	
-}
